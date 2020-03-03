@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 130px;
+  filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.08));
+  background-color: #e7e5e0;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  margin-left: 23px;
+}
+
+.header__info {
+  width: 719px;
+}
+
+.header__top,
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
