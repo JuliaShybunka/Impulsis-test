@@ -1,35 +1,170 @@
+/* line 1, D:/impulsis_test_frontend/app/scss/style.scss */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-.header {
-  height: 130px;
-  filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.08));
-  background-color: #e7e5e0;
+/* line 7, D:/impulsis_test_frontend/app/scss/style.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #4e4e4e;
 }
 
+/* line 13, D:/impulsis_test_frontend/app/scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 18, D:/impulsis_test_frontend/app/scss/style.scss */
 .container {
   width: 980px;
   margin: 0 auto;
 }
+
+/* line 23, D:/impulsis_test_frontend/app/scss/style.scss */
+.header {
+  max-height: 130px;
+  filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.08));
+  background-color: #e7e5e0;
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 32, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__items {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* line 39, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__logo {
   margin-left: 23px;
 }
 
+/* line 43, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__info {
   width: 719px;
 }
 
-.header__top,
-.header__bottom {
+/* line 47, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__top, .header__bottom {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
+
+/* line 54, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__top {
+  justify-content: space-between;
+}
+
+/* line 58, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__top-numbers {
+  width: 350px;
+  margin-left: 12px;
+}
+
+/* line 62, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__top-numbers a {
+  color: #626262;
+  font-size: 20px;
+}
+
+/* line 68, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__top-links,
+.header__top-links a {
+  color: #484848;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+/* line 75, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom {
+  width: 720px;
+  height: 58px;
+  background-color: #dedddb;
+  border: 1px solid #eeece8;
+  margin-top: 2px;
+}
+
+/* line 82, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-signup {
+  margin-right: 12px;
+}
+
+/* line 85, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-signup a {
+  font-size: 14px;
+  color: #484848;
+  filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.75));
+}
+
+/* line 95, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-languages {
+  font-size: 12px;
+  color: #5c5c5c;
+  text-align: center;
+  filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.75));
+  margin-right: 13px;
+}
+
+/* line 102, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-languages button {
+  width: 36px;
+  height: 36px;
+  background-image: linear-gradient(0deg, #d9d9d7 0%, #fbfbfb 100%);
+  border: 1px solid #c3c3c3;
+  outline: none;
+  cursor: pointer;
+  margin: -2px;
+}
+
+/* line 112, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-languages button:hover {
+  background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
+  border: 1px solid #9fd9f2;
+  color: #fff;
+}
+
+/* line 120, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-search input {
+  margin: 0 10px 0 12px;
+  width: 360px;
+  height: 36px;
+  background-color: #8f8e8c;
+  outline: none;
+  font-size: 12px;
+  padding: 0 40px 0 10px;
+  border: none;
+  box-shadow: inset 0 0 2px #979592;
+  color: #fff;
+}
+
+/* line 133, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-search-input {
+  position: relative;
+}
+
+/* line 136, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-search-input::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url(../images/search-icon.png);
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 148, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-search input::placeholder {
+  font-size: 12px;
+  color: #fff;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */
