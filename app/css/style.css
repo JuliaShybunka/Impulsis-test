@@ -102,7 +102,7 @@ a {
   filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.75));
 }
 
-/* line 95, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 92, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-languages {
   font-size: 12px;
   color: #5c5c5c;
@@ -111,7 +111,7 @@ a {
   margin-right: 13px;
 }
 
-/* line 102, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 99, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-languages button {
   width: 36px;
   height: 36px;
@@ -122,14 +122,14 @@ a {
   margin: -2px;
 }
 
-/* line 112, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 109, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-languages button:hover {
   background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
   border: 1px solid #9fd9f2;
   color: #fff;
 }
 
-/* line 120, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 117, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search input {
   margin: 0 10px 0 12px;
   width: 360px;
@@ -143,12 +143,12 @@ a {
   color: #fff;
 }
 
-/* line 133, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 130, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search-input {
   position: relative;
 }
 
-/* line 136, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 133, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search-input::after {
   content: "";
   width: 16px;
@@ -160,11 +160,72 @@ a {
   transform: translateY(-50%);
 }
 
-/* line 148, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 145, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search input::placeholder {
   font-size: 12px;
   color: #fff;
   font-style: italic;
+}
+
+/* line 154, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__nav {
+  width: 990px;
+  height: 40px;
+  filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.45));
+  background-color: #0095da;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+  position: relative;
+}
+
+/* line 170, D:/impulsis_test_frontend/app/scss/style.scss */
+.nav__menu-items {
+  width: 480px;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Opium', arial;
+  filter: drop-shadow(0px 1px 0px rgba(28, 160, 220, 0.75));
+  list-style-type: none;
+  margin: 0;
+}
+
+/* line 182, D:/impulsis_test_frontend/app/scss/style.scss */
+.nav__menu-item a {
+  color: #ffffff;
+}
+
+/* line 186, D:/impulsis_test_frontend/app/scss/style.scss */
+.nav__btn button {
+  width: 195px;
+  height: 42px;
+  background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
+  border: 1px solid #ffb05c;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  filter: drop-shadow(0px 1px 0px rgba(224, 126, 22, 0.75));
+  padding-left: 57px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 202, D:/impulsis_test_frontend/app/scss/style.scss */
+.nav__btn button::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 40px;
+  background-image: url(../images/shopping-btn.png);
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 17px 0 18px;
+  border-right: 1px dashed #ffb13e;
 }
 
 /*# sourceMappingURL=style.css.map */

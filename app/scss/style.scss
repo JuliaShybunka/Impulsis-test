@@ -89,9 +89,6 @@ a {
       }
     }
 
-
-
-
     &-languages {
       font-size: 12px;
       color: #5c5c5c;
@@ -152,4 +149,66 @@ a {
     }
   }
 
+}
+
+.header__nav {
+  width: 990px;
+  height: 40px;
+  filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.45));
+  background-color: #0095da;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+  position: relative;
+
+
+}
+
+
+
+.nav__menu-items {
+  width: 480px;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'Opium', arial;
+  filter: drop-shadow(0px 1px 0px rgba(28, 160, 220, 0.75));
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav__menu-item a {
+  color: #ffffff;
+}
+
+.nav__btn button {
+  width: 195px;
+  height: 42px;
+  background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
+  border: 1px solid #ffb05c;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  filter: drop-shadow(0px 1px 0px rgba(224, 126, 22, 0.75));
+  padding-left: 57px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.nav__btn button::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 40px;
+  background-image: url(../images/shopping-btn.png);
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 17px 0 18px;
+  border-right: 1px dashed #ffb13e;
 }
