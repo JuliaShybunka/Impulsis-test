@@ -233,7 +233,7 @@ a {
 .main__inner {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin: 30px 0 36px 0;
 }
 
 /* line 222, D:/impulsis_test_frontend/app/scss/style.scss */
@@ -417,6 +417,269 @@ a {
   background-repeat: no-repeat;
   left: 0;
   border-right: 1px dashed #ffc556;
+}
+
+/* line 400, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop__title {
+  font-size: 24px;
+  color: #4e4e4e;
+  padding: 35px 0 19px 19px;
+}
+
+/* line 406, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop .slick-slider {
+  width: 722px;
+}
+
+/* line 410, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop .slick__slide {
+  max-width: 163px;
+}
+
+/* line 414, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop__item {
+  max-width: 163px;
+  height: 290px;
+  filter: drop-shadow(0px 1px 1px rgba(0, 1, 1, 0.37));
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid #dcd9d0;
+  border-top: 3px solid #dcd9d0;
+  position: relative;
+}
+
+/* line 425, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop__item-text a {
+  font-size: 12px;
+  color: #006a9b;
+  text-decoration: underline;
+}
+
+/* line 431, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop__item-price {
+  background-color: #f9f9f5;
+  height: 74px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 12px;
+}
+
+/* line 438, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop__item-price-sale {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+/* line 443, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop__item-price-current {
+  font-size: 18px;
+  color: #ff9727;
+}
+
+/* line 451, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop__item + .shop__item {
+  margin-left: 20px;
+}
+
+/* line 460, D:/impulsis_test_frontend/app/scss/style.scss */
+.main__section {
+  width: 720px;
+}
+
+/* line 464, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #eceae5;
+  border-top: 3px solid #ff9a28;
+}
+
+/* line 472, D:/impulsis_test_frontend/app/scss/style.scss */
+.about {
+  min-width: 460px;
+  padding: 26px 0 0 21px;
+}
+
+/* line 476, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__title {
+  font-size: 22px;
+}
+
+/* line 480, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__text {
+  padding-top: 25px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 485, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__text a {
+  color: #006a9b;
+  text-decoration: underline;
+}
+
+/* line 490, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__text-bold {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 26px 0 33px;
+}
+
+/* line 498, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__list {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+/* line 502, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__list-title {
+  padding-top: 15px;
+}
+
+/* line 506, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__list ul li {
+  font-style: italic;
+  list-style: none;
+}
+
+/* line 511, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__list ul li:before {
+  content: "";
+  border-color: transparent #008eef;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+/* line 526, D:/impulsis_test_frontend/app/scss/style.scss */
+.news {
+  margin-left: 23px;
+}
+
+/* line 529, D:/impulsis_test_frontend/app/scss/style.scss */
+.news__title {
+  font-size: 18px;
+  line-height: 14px;
+  padding: 26px 0 15px 0;
+}
+
+/* line 535, D:/impulsis_test_frontend/app/scss/style.scss */
+.news__box {
+  width: 220px;
+  padding: 12px 17px 12px 0;
+  border-top: 1px solid #ece9e4;
+  border-bottom: 1px solid #ece9e4;
+  line-height: 20px;
+}
+
+/* line 542, D:/impulsis_test_frontend/app/scss/style.scss */
+.news__box span {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/* line 547, D:/impulsis_test_frontend/app/scss/style.scss */
+.news__box a {
+  font-size: 12px;
+  color: #006a9b;
+  text-decoration: underline;
+}
+
+/* line 557, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__inner {
+  filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.08));
+  background-color: #e7e5e0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 566, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__lists {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  width: 500px;
+}
+
+/* line 573, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__list ul {
+  padding: 0;
+}
+
+/* line 577, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__list ul li {
+  list-style-type: none;
+}
+
+/* line 581, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__list ul li a {
+  font-size: 13px;
+  line-height: 20px;
+  color: #4e4e4e;
+}
+
+/* line 588, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__rights {
+  padding-top: 13px;
+}
+
+/* line 591, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__rights-text {
+  width: 156px;
+  font-size: 11px;
+  color: #8c8c8c;
+  padding-bottom: 15px;
+}
+
+/* line 599, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__social {
+  padding-right: 25px;
+}
+
+/* line 603, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__social-icons {
+  width: 118px;
+  height: 103px;
+  background-color: #0095d9;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 9px;
+}
+
+/* line 615, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__social-btn a {
+  cursor: pointer;
+  height: 30px;
+  background-color: #e9e7e2;
+  border: 1px solid #f3f2f0;
+  color: #0095da;
+  font-size: 13px;
+  display: inline-block;
+  width: 100%;
+  padding: 5px 0 9px 18px;
+  margin-top: 11px;
+  text-align: center;
+  position: relative;
+}
+
+/* line 630, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__social-btn a::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/footer-arrow.png);
+  width: 11px;
+  height: 7px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 27px;
+  top: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
