@@ -5,15 +5,15 @@ $(document).ready(function() {
   });
 
   var slickOpts = {
+    infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
-    //centerMode: true,
-    easing: "swing", // see http://api.jquery.com/animate/
+    easing: "swing",
     speed: 700,
     arrows: true,
     dots: true,
-    prevArrow:
-      '<button type="button" class="slick-prev">Previous</button></div>',
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
 
     customPaging: function(slick, index) {
       return "<a>" + (index + 1) + "</a>";

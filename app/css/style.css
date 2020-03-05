@@ -58,62 +58,76 @@ a {
   align-items: center;
 }
 
-/* line 58, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 57, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top {
   justify-content: space-between;
 }
 
-/* line 62, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 61, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top-numbers {
   width: 350px;
-  margin-left: 12px;
+  margin-left: 13px;
 }
 
-/* line 66, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 65, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top-numbers a {
   color: #626262;
   font-size: 20px;
 }
 
 /* line 72, D:/impulsis_test_frontend/app/scss/style.scss */
-.header__top-links,
 .header__top-links a {
   color: #484848;
   font-size: 11px;
   line-height: 20px;
+  width: 338px;
 }
 
 /* line 79, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__top-links span {
+  padding: 0 1.5px;
+  font-size: 11px;
+}
+
+/* line 86, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom {
   width: 720px;
   height: 58px;
   background-color: #dedddb;
   border: 1px solid #eeece8;
   margin-top: 2px;
+  padding-top: 5px;
 }
 
-/* line 86, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 94, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-signup {
   margin-right: 12px;
 }
 
-/* line 89, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 97, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-signup a {
   font-size: 14px;
   color: #484848;
   filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.75));
 }
 
-/* line 96, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 103, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-signup span {
+  font-size: 14px;
+  padding: 0 2.4px;
+}
+
+/* line 109, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-languages {
   font-size: 12px;
   color: #5c5c5c;
   text-align: center;
   filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.75));
-  margin-right: 13px;
+  margin-right: 14px;
+  margin-left: 3px;
 }
 
-/* line 103, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 117, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-languages button {
   width: 36px;
   height: 36px;
@@ -124,14 +138,14 @@ a {
   margin: -2px;
 }
 
-/* line 113, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 127, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-languages button:hover {
   background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
   border: 1px solid #9fd9f2;
   color: #fff;
 }
 
-/* line 121, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 135, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search input {
   margin: 0 10px 0 12px;
   width: 360px;
@@ -145,12 +159,12 @@ a {
   color: #fff;
 }
 
-/* line 134, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 148, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search-input {
   position: relative;
 }
 
-/* line 137, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 151, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search-input::after {
   content: "";
   width: 16px;
@@ -162,14 +176,14 @@ a {
   transform: translateY(-50%);
 }
 
-/* line 149, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 163, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search input::placeholder {
   font-size: 12px;
   color: #fff;
   font-style: italic;
 }
 
-/* line 158, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 172, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__nav {
   width: 990px;
   height: 40px;
@@ -178,28 +192,36 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -5px;
+  margin-top: -3px;
   position: relative;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* line 174, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 188, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__menu-items {
-  width: 480px;
+  width: 482px;
   font-size: 19px;
   display: flex;
   justify-content: space-between;
-  font-family: "Dejavu Sans";
+  font-weight: 300;
   filter: drop-shadow(0px 1px 0px rgba(28, 160, 220, 0.75));
   list-style-type: none;
+  padding-top: 3px;
   margin: 0;
+  padding-left: 38px;
 }
 
-/* line 186, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 201, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__menu-item a {
   color: #ffffff;
 }
 
-/* line 190, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 205, D:/impulsis_test_frontend/app/scss/style.scss */
+.nav__btn span {
+  padding-left: 3px;
+}
+
+/* line 209, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__btn button {
   width: 195px;
   height: 42px;
@@ -213,9 +235,11 @@ a {
   outline: none;
   cursor: pointer;
   position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300px;
 }
 
-/* line 206, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 227, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__btn button::before {
   position: absolute;
   content: "";
@@ -230,12 +254,12 @@ a {
   border-right: 1px dashed #ffb13e;
 }
 
-/* line 220, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 241, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon {
   position: relative;
 }
 
-/* line 224, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 245, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon::before, .header__ribbon::after {
   position: absolute;
   content: "";
@@ -246,14 +270,14 @@ a {
   overflow: hidden;
 }
 
-/* line 235, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 256, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon:before {
   left: -329px;
   border-right-width: 311px;
   border-left-color: transparent;
 }
 
-/* line 241, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 262, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon:after {
   right: -339px;
   border-left-width: 311px;
@@ -261,7 +285,7 @@ a {
   z-index: -20;
 }
 
-/* line 250, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 271, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon .header__nav:before,
 .header__ribbon .header__nav:after {
   content: "";
@@ -272,46 +296,48 @@ a {
   bottom: -6px;
 }
 
-/* line 260, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 281, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon .header__nav:before {
   left: 0;
   border-width: 5px 0 0 5px;
 }
 
-/* line 265, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 286, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon .header__nav:after {
   right: 0;
   border-width: 5px 5px 0 0;
 }
 
-/* line 270, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 291, D:/impulsis_test_frontend/app/scss/style.scss */
 .main__inner {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0 36px 0;
+  margin: 34px 0 36px 0;
 }
 
-/* line 276, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 297, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue {
   width: 240px;
+  margin-left: 4px;
 }
 
-/* line 282, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 305, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__items {
   padding: 0;
+  margin-top: 0;
 }
 
-/* line 286, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 309, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__items li + li {
   margin-top: 1px;
 }
 
-/* line 291, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 314, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__item {
   list-style-type: none;
 }
 
-/* line 294, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 317, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__item-link {
   width: 240px;
   min-height: 40px;
@@ -326,7 +352,7 @@ a {
   position: relative;
 }
 
-/* line 307, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 330, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__item-link::before {
   position: absolute;
   content: "";
@@ -339,40 +365,46 @@ a {
   transform: translateY(-50%);
 }
 
-/* line 322, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 345, D:/impulsis_test_frontend/app/scss/style.scss */
+.slick-slide {
+  outline: none;
+}
+
+/* line 349, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider {
   width: 720px;
   height: 403px;
   position: relative;
+  margin-left: 4px;
 }
 
-/* line 328, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 356, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li {
   margin: 0;
 }
 
-/* line 332, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 359, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li button::before {
   color: #0095d9;
   font-size: 16px;
   opacity: 1;
 }
 
-/* line 341, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 367, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li.slick-active button::before {
   color: #0095d9;
   font-size: 20px;
   opacity: 1;
 }
 
-/* line 350, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 376, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li.slick-active button::after {
   font-family: 'slick';
   font-size: 8px;
   line-height: 20px;
   position: absolute;
   top: 0;
-  left: 4.5px;
+  left: 4.8px;
   width: 10px;
   height: 10px;
   content: '•';
@@ -381,50 +413,49 @@ a {
   opacity: 1;
 }
 
-/* line 365, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 391, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__items {
   position: relative;
   outline: none;
 }
 
-/* line 370, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 396, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dotted.slick-slider {
   margin: 0;
   min-height: 400px;
 }
 
-/* line 376, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 402, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots {
   position: absolute;
   display: inline-block;
   width: 403px;
   height: 50px;
-  bottom: 5px;
+  bottom: 12px;
   right: 0;
   background-image: url(../images/slide-pagination.png);
   background-repeat: no-repeat;
   padding: 19px 42px 16px;
 }
 
-/* line 388, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 414, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li {
   float: right;
   margin-left: 10px;
 }
 
-/* line 394, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 420, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__item image {
   min-width: 720px;
   min-height: 400px;
 }
 
-/* line 399, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 425, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info {
   width: 480px;
-  height: 92px;
+  height: 97px;
   background-image: url(../images/slider__info-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
   position: absolute;
   bottom: 0;
   left: -6px;
@@ -432,20 +463,21 @@ a {
   justify-content: space-between;
 }
 
-/* line 412, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 437, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info-text {
-  max-width: 235px;
+  max-width: 240px;
   font-size: 24px;
   line-height: 24px;
   color: #fff;
-  font-family: "Opium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300px;
   filter: drop-shadow(0px 1px 0px rgba(0, 153, 223, 0.37));
-  padding: 17px 0 0 18px;
+  padding: 15px 0 0 18px;
 }
 
-/* line 422, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 448, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info-link a {
-  width: 194px;
+  width: 179px;
   height: 38px;
   background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
   border: 1px solid #ffb15c;
@@ -461,7 +493,7 @@ a {
   position: relative;
 }
 
-/* line 440, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 466, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info-link::after {
   position: absolute;
   content: "";
@@ -469,11 +501,11 @@ a {
   display: block;
   border-style: solid;
   border-color: #004261 transparent transparent transparent;
-  bottom: 14.5px;
+  bottom: 19.5px;
   right: 5px;
 }
 
-/* line 454, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 480, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info-link a::before {
   position: absolute;
   content: '';
@@ -487,25 +519,61 @@ a {
   border-right: 1px dashed #ffc556;
 }
 
-/* line 472, D:/impulsis_test_frontend/app/scss/style.scss */
-.slick-slide img {
+/* line 500, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop {
+  position: relative;
+}
+
+/* line 503, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop .prev,
+.shop .next {
+  width: 38px;
+  height: 30px;
+  border: 1px solid #c4c4c4;
+  margin: 0;
+  cursor: pointer;
+  padding-top: 5px;
+  position: absolute;
+  list-style-type: none;
+}
+
+/* line 516, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop .prev {
+  bottom: -47px;
+  left: 250px;
+  background: url("../images/shop-arrow-prev.png"), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 524, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop .next {
+  bottom: -47px;
+  right: 242px;
+  background: url("../images/shop-arrow-next.png"), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 532, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop .slick-dotted.slick-slider {
+  position: relative;
+  margin: 0 0 91px 3px;
+}
+
+/* line 537, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop .slick-slide img {
   margin: 0 auto;
   padding-top: 14px;
 }
 
-/* line 478, D:/impulsis_test_frontend/app/scss/style.scss */
-.shop .slick-dotted.slick-slider {
-  margin-bottom: 85px;
-  position: relative;
-}
-
-/* line 483, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 542, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dots {
   margin-top: 15px;
-  bottom: -45px;
+  bottom: -47px;
 }
 
-/* line 488, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 547, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dots li {
   width: 38px;
   height: 30px;
@@ -516,40 +584,42 @@ a {
   padding-top: 5px;
 }
 
-/* line 498, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 557, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dots li a {
   text-align: center;
   font-size: 12px;
 }
 
-/* line 505, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 564, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dots li.slick-active {
   background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
   border: 1px solid #9fd9f2;
   color: #fff;
 }
 
-/* line 511, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 570, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__title {
   font-size: 24px;
   color: #4e4e4e;
-  padding: 35px 0 19px 19px;
+  padding: 24px 0 15px 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-/* line 517, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 578, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-slider {
   width: 722px;
   position: relative;
 }
 
-/* line 522, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 583, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick__slide {
   max-width: 163px;
 }
 
-/* line 526, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 587, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item {
-  max-width: 163px;
+  width: 160px;
   height: 290px;
   filter: drop-shadow(0px 1px 1px rgba(0, 1, 1, 0.37));
   background-color: #ffffff;
@@ -557,16 +627,29 @@ a {
   border: 1px solid #dcd9d0;
   border-top: 3px solid #dcd9d0;
   position: relative;
+  margin: 0 5.5px;
 }
 
-/* line 537, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 598, D:/impulsis_test_frontend/app/scss/style.scss */
+.shop__item::before {
+  position: absolute;
+  content: "";
+  border-width: 5px 5.5px 0 4.5px;
+  display: block;
+  border-style: solid;
+  border-color: #004261 transparent transparent transparent;
+  right: -5px;
+  bottom: 3px;
+}
+
+/* line 610, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-btn {
   position: absolute;
   bottom: 7px;
   right: -5px;
 }
 
-/* line 543, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 616, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-btn-inner {
   padding: 0 25px 0 80px;
   font-size: 12px;
@@ -584,7 +667,7 @@ a {
   position: relative;
 }
 
-/* line 559, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 632, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-btn-inner::before {
   content: '';
   position: absolute;
@@ -598,14 +681,14 @@ a {
   background-position: center;
 }
 
-/* line 576, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 649, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-text a {
   font-size: 12px;
   color: #006a9b;
   text-decoration: underline;
 }
 
-/* line 582, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 655, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-price {
   background-color: #f9f9f5;
   height: 74px;
@@ -615,62 +698,53 @@ a {
   width: 100%;
 }
 
-/* line 590, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 663, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-price-sale {
   font-size: 12px;
   text-decoration: line-through;
 }
 
-/* line 595, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 668, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-price-current {
   font-size: 18px;
   color: #ff9727;
 }
 
-/* line 603, D:/impulsis_test_frontend/app/scss/style.scss */
-.shop__item + .shop__item {
-  margin-left: 20px;
-}
-
-/* line 612, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 680, D:/impulsis_test_frontend/app/scss/style.scss */
 .main__section {
   width: 720px;
 }
 
-/* line 616, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 684, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__box {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
   border: 1px solid #eceae5;
   border-top: 3px solid #ff9a28;
+  margin-left: 5px;
+  width: 718px;
 }
 
-/* line 624, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 694, D:/impulsis_test_frontend/app/scss/style.scss */
 .about {
-  min-width: 460px;
-  padding: 26px 0 0 21px;
+  max-width: 460px;
+  padding: 20px 0 0 21px;
 }
 
-/* line 628, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 698, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__title {
   font-size: 22px;
 }
 
-/* line 632, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 702, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__text {
-  padding-top: 25px;
+  padding-top: 20px;
   font-size: 13px;
   line-height: 20px;
 }
 
-/* line 637, D:/impulsis_test_frontend/app/scss/style.scss */
-.about__text a {
-  color: #006a9b;
-  text-decoration: underline;
-}
-
-/* line 642, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 709, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__text-bold {
   font-size: 16px;
   font-weight: bold;
@@ -678,50 +752,69 @@ a {
   padding: 26px 0 33px;
 }
 
-/* line 650, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 719, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__text-bottom {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 723, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__text-bottom a {
+  color: #006a9b;
+  text-decoration: underline;
+}
+
+/* line 730, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list {
   line-height: 20px;
   font-size: 13px;
 }
 
-/* line 654, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 734, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list-title {
   padding-top: 15px;
 }
 
-/* line 658, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 738, D:/impulsis_test_frontend/app/scss/style.scss */
+.about__list ul {
+  padding-left: 29px;
+  max-width: 400px;
+  margin-top: 0;
+}
+
+/* line 745, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list ul li {
   font-style: italic;
   list-style: none;
 }
 
-/* line 663, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 750, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list ul li:before {
   content: "";
   border-color: transparent #008eef;
   border-style: solid;
-  border-width: 0.35em 0 0.35em 0.45em;
+  border-width: 6px 0 6px 8px;
   display: block;
   height: 0;
   width: 0;
-  left: -1em;
-  top: 0.9em;
+  left: -19px;
+  top: 15px;
   position: relative;
 }
 
-/* line 678, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 765, D:/impulsis_test_frontend/app/scss/style.scss */
 .news {
-  margin-left: 23px;
+  margin-right: 20px;
 }
 
-/* line 681, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 768, D:/impulsis_test_frontend/app/scss/style.scss */
 .news__title {
   font-size: 18px;
   line-height: 14px;
   padding: 26px 0 15px 0;
 }
 
-/* line 687, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 774, D:/impulsis_test_frontend/app/scss/style.scss */
 .news__box {
   width: 220px;
   padding: 12px 17px 12px 0;
@@ -730,38 +823,38 @@ a {
   line-height: 20px;
 }
 
-/* line 694, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 781, D:/impulsis_test_frontend/app/scss/style.scss */
 .news__box span {
   font-weight: bold;
   font-size: 10px;
 }
 
-/* line 699, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 786, D:/impulsis_test_frontend/app/scss/style.scss */
 .news__box a {
   font-size: 12px;
   color: #006a9b;
   text-decoration: underline;
 }
 
-/* line 708, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 795, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer {
   background-color: #e7e5e0;
   border-top: 5px solid #57afdb;
 }
 
-/* line 712, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 799, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__container {
   width: 990px;
   margin: 0 auto;
   border-top: 5px solid #0095d9;
 }
 
-/* line 719, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 806, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__ribbon {
   position: relative;
 }
 
-/* line 722, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 809, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__ribbon::before {
   position: absolute;
   width: 980px;
@@ -772,7 +865,7 @@ a {
   background-color: #fff;
 }
 
-/* line 735, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 822, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__inner {
   filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.08));
   background-color: #e7e5e0;
@@ -781,7 +874,7 @@ a {
   position: relative;
 }
 
-/* line 742, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 829, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__inner::before {
   left: 0;
   border-width: 0 0 6px 6px;
@@ -793,7 +886,7 @@ a {
   top: -10px;
 }
 
-/* line 754, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 841, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__inner::after {
   border-width: 0 6px 6px 0;
   content: "";
@@ -805,37 +898,38 @@ a {
   top: -10px;
 }
 
-/* line 772, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 859, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__lists {
   display: flex;
   justify-content: space-between;
   padding-left: 25px;
-  width: 500px;
+  width: 525px;
 }
 
-/* line 779, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 866, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__list ul {
   padding: 0;
 }
 
-/* line 783, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 870, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__list ul li {
   list-style-type: none;
 }
 
-/* line 787, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 874, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__list ul li a {
   font-size: 13px;
   line-height: 20px;
   color: #4e4e4e;
 }
 
-/* line 794, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 881, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__rights {
-  padding-top: 13px;
+  padding-top: 10px;
+  padding-left: 42px;
 }
 
-/* line 797, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 885, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__rights-text {
   width: 156px;
   font-size: 11px;
@@ -843,12 +937,17 @@ a {
   padding-bottom: 15px;
 }
 
-/* line 805, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 892, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__rights-img img {
+  padding-left: 6px;
+}
+
+/* line 897, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__social {
   padding-right: 25px;
 }
 
-/* line 809, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 901, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__social-icons {
   width: 118px;
   height: 103px;
@@ -858,7 +957,7 @@ a {
   padding-left: 9px;
 }
 
-/* line 821, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 913, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__social-btn a {
   cursor: pointer;
   height: 30px;
@@ -874,7 +973,7 @@ a {
   position: relative;
 }
 
-/* line 836, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 928, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__social-btn a::before {
   position: absolute;
   content: "";
