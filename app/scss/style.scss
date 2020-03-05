@@ -44,6 +44,10 @@ a {
     margin-left: 23px;
   }
 
+  &__logo-mobile {
+    display: none;
+  }
+
   &__info {
     width: 719px;
   }
@@ -124,7 +128,8 @@ a {
         margin: -2px;
       }
 
-      button:hover {
+      button:hover,
+      .active {
         background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
         border: 1px solid #9fd9f2;
         color: #fff;
@@ -200,6 +205,12 @@ a {
 
 .nav__menu-item a {
   color: #ffffff;
+  padding: 5px;
+
+  &:hover {
+    background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
+    border: 1px solid #ffb05c;
+  }
 }
 
 .nav__btn span {
@@ -221,6 +232,7 @@ a {
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: 300px;
+
 
 }
 
@@ -327,6 +339,11 @@ a {
     padding: 10px 25px 10px 19px;
     position: relative;
 
+    &:hover {
+      background: rgb(255, 198, 0);
+      background: linear-gradient(97deg, rgba(255, 198, 0, 1) 0%, rgba(251, 251, 251, 1) 100%);
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -408,11 +425,12 @@ a {
     right: 0;
     background-image: url(../images/slide-pagination.png);
     background-repeat: no-repeat;
-    padding: 19px 42px 16px;
+
+    padding: 12px 53px 16px 157px;
 
 
     li {
-      float: right;
+
       margin-left: 10px;
     }
   }
@@ -460,6 +478,12 @@ a {
       display: inline-block;
       text-transform: uppercase;
       position: relative;
+
+      &:hover {
+        background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
+        border: 1px solid #9fd9f2;
+
+      }
     }
 
     &-link {
@@ -512,6 +536,7 @@ a {
     list-style-type: none;
 
   }
+
 
   .prev {
     bottom: -47px;
@@ -923,6 +948,12 @@ a {
   margin-top: 11px;
   text-align: center;
   position: relative;
+
+  &:hover {
+    background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
+    border: 1px solid #ffb05c;
+    color: #fff;
+  }
 }
 
 .footer__social-btn a::before {
@@ -935,4 +966,10 @@ a {
   background-position: center;
   left: 27px;
   top: 8px;
+}
+
+.button__hover:hover {
+  background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
+  border: 1px solid #9fd9f2;
+
 }

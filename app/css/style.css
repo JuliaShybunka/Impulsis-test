@@ -48,34 +48,39 @@ a {
 }
 
 /* line 47, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__logo-mobile {
+  display: none;
+}
+
+/* line 51, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__info {
   width: 719px;
 }
 
-/* line 51, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 55, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top, .header__bottom {
   display: flex;
   align-items: center;
 }
 
-/* line 57, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 61, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top {
   justify-content: space-between;
 }
 
-/* line 61, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 65, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top-numbers {
   width: 350px;
   margin-left: 13px;
 }
 
-/* line 65, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 69, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top-numbers a {
   color: #626262;
   font-size: 20px;
 }
 
-/* line 72, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 76, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top-links a {
   color: #484848;
   font-size: 11px;
@@ -83,13 +88,13 @@ a {
   width: 338px;
 }
 
-/* line 79, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 83, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__top-links span {
   padding: 0 1.5px;
   font-size: 11px;
 }
 
-/* line 86, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 90, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom {
   width: 720px;
   height: 58px;
@@ -99,25 +104,25 @@ a {
   padding-top: 5px;
 }
 
-/* line 94, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 98, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-signup {
   margin-right: 12px;
 }
 
-/* line 97, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 101, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-signup a {
   font-size: 14px;
   color: #484848;
   filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.75));
 }
 
-/* line 103, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 107, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-signup span {
   font-size: 14px;
   padding: 0 2.4px;
 }
 
-/* line 109, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 113, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-languages {
   font-size: 12px;
   color: #5c5c5c;
@@ -127,7 +132,7 @@ a {
   margin-left: 3px;
 }
 
-/* line 117, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 121, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-languages button {
   width: 36px;
   height: 36px;
@@ -138,14 +143,15 @@ a {
   margin: -2px;
 }
 
-/* line 127, D:/impulsis_test_frontend/app/scss/style.scss */
-.header__bottom-languages button:hover {
+/* line 131, D:/impulsis_test_frontend/app/scss/style.scss */
+.header__bottom-languages button:hover,
+.header__bottom-languages .active {
   background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
   border: 1px solid #9fd9f2;
   color: #fff;
 }
 
-/* line 135, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 140, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search input {
   margin: 0 10px 0 12px;
   width: 360px;
@@ -159,12 +165,12 @@ a {
   color: #fff;
 }
 
-/* line 148, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 153, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search-input {
   position: relative;
 }
 
-/* line 151, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 156, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search-input::after {
   content: "";
   width: 16px;
@@ -176,14 +182,14 @@ a {
   transform: translateY(-50%);
 }
 
-/* line 163, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 168, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__bottom-search input::placeholder {
   font-size: 12px;
   color: #fff;
   font-style: italic;
 }
 
-/* line 172, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 177, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__nav {
   width: 990px;
   height: 40px;
@@ -197,7 +203,7 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 188, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 193, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__menu-items {
   width: 482px;
   font-size: 19px;
@@ -211,17 +217,24 @@ a {
   padding-left: 38px;
 }
 
-/* line 201, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 206, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__menu-item a {
   color: #ffffff;
+  padding: 5px;
 }
 
-/* line 205, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 210, D:/impulsis_test_frontend/app/scss/style.scss */
+.nav__menu-item a:hover {
+  background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
+  border: 1px solid #ffb05c;
+}
+
+/* line 216, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__btn span {
   padding-left: 3px;
 }
 
-/* line 209, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 220, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__btn button {
   width: 195px;
   height: 42px;
@@ -239,7 +252,7 @@ a {
   font-weight: 300px;
 }
 
-/* line 227, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 239, D:/impulsis_test_frontend/app/scss/style.scss */
 .nav__btn button::before {
   position: absolute;
   content: "";
@@ -254,12 +267,12 @@ a {
   border-right: 1px dashed #ffb13e;
 }
 
-/* line 241, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 253, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon {
   position: relative;
 }
 
-/* line 245, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 257, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon::before, .header__ribbon::after {
   position: absolute;
   content: "";
@@ -270,14 +283,14 @@ a {
   overflow: hidden;
 }
 
-/* line 256, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 268, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon:before {
   left: -329px;
   border-right-width: 311px;
   border-left-color: transparent;
 }
 
-/* line 262, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 274, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon:after {
   right: -339px;
   border-left-width: 311px;
@@ -285,7 +298,7 @@ a {
   z-index: -20;
 }
 
-/* line 271, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 283, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon .header__nav:before,
 .header__ribbon .header__nav:after {
   content: "";
@@ -296,48 +309,48 @@ a {
   bottom: -6px;
 }
 
-/* line 281, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 293, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon .header__nav:before {
   left: 0;
   border-width: 5px 0 0 5px;
 }
 
-/* line 286, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 298, D:/impulsis_test_frontend/app/scss/style.scss */
 .header__ribbon .header__nav:after {
   right: 0;
   border-width: 5px 5px 0 0;
 }
 
-/* line 291, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 303, D:/impulsis_test_frontend/app/scss/style.scss */
 .main__inner {
   display: flex;
   justify-content: space-between;
   margin: 34px 0 36px 0;
 }
 
-/* line 297, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 309, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue {
   width: 240px;
   margin-left: 4px;
 }
 
-/* line 305, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 317, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__items {
   padding: 0;
   margin-top: 0;
 }
 
-/* line 309, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 321, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__items li + li {
   margin-top: 1px;
 }
 
-/* line 314, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 326, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__item {
   list-style-type: none;
 }
 
-/* line 317, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 329, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__item-link {
   width: 240px;
   min-height: 40px;
@@ -352,7 +365,13 @@ a {
   position: relative;
 }
 
-/* line 330, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 342, D:/impulsis_test_frontend/app/scss/style.scss */
+.catalogue__item-link:hover {
+  background: #ffc600;
+  background: linear-gradient(97deg, #ffc600 0%, #fbfbfb 100%);
+}
+
+/* line 347, D:/impulsis_test_frontend/app/scss/style.scss */
 .catalogue__item-link::before {
   position: absolute;
   content: "";
@@ -365,12 +384,12 @@ a {
   transform: translateY(-50%);
 }
 
-/* line 345, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 362, D:/impulsis_test_frontend/app/scss/style.scss */
 .slick-slide {
   outline: none;
 }
 
-/* line 349, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 366, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider {
   width: 720px;
   height: 403px;
@@ -378,26 +397,26 @@ a {
   margin-left: 4px;
 }
 
-/* line 356, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 373, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li {
   margin: 0;
 }
 
-/* line 359, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 376, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li button::before {
   color: #0095d9;
   font-size: 16px;
   opacity: 1;
 }
 
-/* line 367, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 384, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li.slick-active button::before {
   color: #0095d9;
   font-size: 20px;
   opacity: 1;
 }
 
-/* line 376, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 393, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li.slick-active button::after {
   font-family: 'slick';
   font-size: 8px;
@@ -413,19 +432,19 @@ a {
   opacity: 1;
 }
 
-/* line 391, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 408, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__items {
   position: relative;
   outline: none;
 }
 
-/* line 396, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 413, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dotted.slick-slider {
   margin: 0;
   min-height: 400px;
 }
 
-/* line 402, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 419, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots {
   position: absolute;
   display: inline-block;
@@ -435,22 +454,21 @@ a {
   right: 0;
   background-image: url(../images/slide-pagination.png);
   background-repeat: no-repeat;
-  padding: 19px 42px 16px;
+  padding: 12px 53px 16px 157px;
 }
 
-/* line 414, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 432, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slick-dots li {
-  float: right;
   margin-left: 10px;
 }
 
-/* line 420, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 438, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__item image {
   min-width: 720px;
   min-height: 400px;
 }
 
-/* line 425, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 443, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info {
   width: 480px;
   height: 97px;
@@ -463,7 +481,7 @@ a {
   justify-content: space-between;
 }
 
-/* line 437, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 455, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info-text {
   max-width: 240px;
   font-size: 24px;
@@ -475,7 +493,7 @@ a {
   padding: 15px 0 0 18px;
 }
 
-/* line 448, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 466, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info-link a {
   width: 179px;
   height: 38px;
@@ -493,7 +511,13 @@ a {
   position: relative;
 }
 
-/* line 466, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 482, D:/impulsis_test_frontend/app/scss/style.scss */
+.slider .slider__info-link a:hover {
+  background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
+  border: 1px solid #9fd9f2;
+}
+
+/* line 490, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info-link::after {
   position: absolute;
   content: "";
@@ -505,7 +529,7 @@ a {
   right: 5px;
 }
 
-/* line 480, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 504, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider .slider__info-link a::before {
   position: absolute;
   content: '';
@@ -519,12 +543,12 @@ a {
   border-right: 1px dashed #ffc556;
 }
 
-/* line 500, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 524, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop {
   position: relative;
 }
 
-/* line 503, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 527, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .prev,
 .shop .next {
   width: 38px;
@@ -537,7 +561,7 @@ a {
   list-style-type: none;
 }
 
-/* line 516, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 541, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .prev {
   bottom: -47px;
   left: 250px;
@@ -546,7 +570,7 @@ a {
   background-position: center;
 }
 
-/* line 524, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 549, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .next {
   bottom: -47px;
   right: 242px;
@@ -555,25 +579,25 @@ a {
   background-position: center;
 }
 
-/* line 532, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 557, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dotted.slick-slider {
   position: relative;
   margin: 0 0 91px 3px;
 }
 
-/* line 537, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 562, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-slide img {
   margin: 0 auto;
   padding-top: 14px;
 }
 
-/* line 542, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 567, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dots {
   margin-top: 15px;
   bottom: -47px;
 }
 
-/* line 547, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 572, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dots li {
   width: 38px;
   height: 30px;
@@ -584,20 +608,20 @@ a {
   padding-top: 5px;
 }
 
-/* line 557, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 582, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dots li a {
   text-align: center;
   font-size: 12px;
 }
 
-/* line 564, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 589, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-dots li.slick-active {
   background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
   border: 1px solid #9fd9f2;
   color: #fff;
 }
 
-/* line 570, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 595, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__title {
   font-size: 24px;
   color: #4e4e4e;
@@ -606,18 +630,18 @@ a {
   font-weight: 300;
 }
 
-/* line 578, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 603, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick-slider {
   width: 722px;
   position: relative;
 }
 
-/* line 583, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 608, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop .slick__slide {
   max-width: 163px;
 }
 
-/* line 587, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 612, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item {
   width: 160px;
   height: 290px;
@@ -630,7 +654,7 @@ a {
   margin: 0 5.5px;
 }
 
-/* line 598, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 623, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item::before {
   position: absolute;
   content: "";
@@ -642,14 +666,14 @@ a {
   bottom: 3px;
 }
 
-/* line 610, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 635, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-btn {
   position: absolute;
   bottom: 7px;
   right: -5px;
 }
 
-/* line 616, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 641, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-btn-inner {
   padding: 0 25px 0 80px;
   font-size: 12px;
@@ -667,7 +691,7 @@ a {
   position: relative;
 }
 
-/* line 632, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 657, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-btn-inner::before {
   content: '';
   position: absolute;
@@ -681,14 +705,14 @@ a {
   background-position: center;
 }
 
-/* line 649, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 674, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-text a {
   font-size: 12px;
   color: #006a9b;
   text-decoration: underline;
 }
 
-/* line 655, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 680, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-price {
   background-color: #f9f9f5;
   height: 74px;
@@ -698,24 +722,24 @@ a {
   width: 100%;
 }
 
-/* line 663, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 688, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-price-sale {
   font-size: 12px;
   text-decoration: line-through;
 }
 
-/* line 668, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 693, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-price-current {
   font-size: 18px;
   color: #ff9727;
 }
 
-/* line 680, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 705, D:/impulsis_test_frontend/app/scss/style.scss */
 .main__section {
   width: 720px;
 }
 
-/* line 684, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 709, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__box {
   display: flex;
   justify-content: space-between;
@@ -726,25 +750,25 @@ a {
   width: 718px;
 }
 
-/* line 694, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 719, D:/impulsis_test_frontend/app/scss/style.scss */
 .about {
   max-width: 460px;
   padding: 20px 0 0 21px;
 }
 
-/* line 698, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 723, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__title {
   font-size: 22px;
 }
 
-/* line 702, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 727, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__text {
   padding-top: 20px;
   font-size: 13px;
   line-height: 20px;
 }
 
-/* line 709, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 734, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__text-bold {
   font-size: 16px;
   font-weight: bold;
@@ -752,43 +776,43 @@ a {
   padding: 26px 0 33px;
 }
 
-/* line 719, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 744, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__text-bottom {
   font-size: 13px;
   line-height: 20px;
 }
 
-/* line 723, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 748, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__text-bottom a {
   color: #006a9b;
   text-decoration: underline;
 }
 
-/* line 730, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 755, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list {
   line-height: 20px;
   font-size: 13px;
 }
 
-/* line 734, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 759, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list-title {
   padding-top: 15px;
 }
 
-/* line 738, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 763, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list ul {
   padding-left: 29px;
   max-width: 400px;
   margin-top: 0;
 }
 
-/* line 745, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 770, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list ul li {
   font-style: italic;
   list-style: none;
 }
 
-/* line 750, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 775, D:/impulsis_test_frontend/app/scss/style.scss */
 .about__list ul li:before {
   content: "";
   border-color: transparent #008eef;
@@ -802,19 +826,19 @@ a {
   position: relative;
 }
 
-/* line 765, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 790, D:/impulsis_test_frontend/app/scss/style.scss */
 .news {
   margin-right: 20px;
 }
 
-/* line 768, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 793, D:/impulsis_test_frontend/app/scss/style.scss */
 .news__title {
   font-size: 18px;
   line-height: 14px;
   padding: 26px 0 15px 0;
 }
 
-/* line 774, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 799, D:/impulsis_test_frontend/app/scss/style.scss */
 .news__box {
   width: 220px;
   padding: 12px 17px 12px 0;
@@ -823,38 +847,38 @@ a {
   line-height: 20px;
 }
 
-/* line 781, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 806, D:/impulsis_test_frontend/app/scss/style.scss */
 .news__box span {
   font-weight: bold;
   font-size: 10px;
 }
 
-/* line 786, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 811, D:/impulsis_test_frontend/app/scss/style.scss */
 .news__box a {
   font-size: 12px;
   color: #006a9b;
   text-decoration: underline;
 }
 
-/* line 795, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 820, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer {
   background-color: #e7e5e0;
   border-top: 5px solid #57afdb;
 }
 
-/* line 799, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 824, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__container {
   width: 990px;
   margin: 0 auto;
   border-top: 5px solid #0095d9;
 }
 
-/* line 806, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 831, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__ribbon {
   position: relative;
 }
 
-/* line 809, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 834, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__ribbon::before {
   position: absolute;
   width: 980px;
@@ -865,7 +889,7 @@ a {
   background-color: #fff;
 }
 
-/* line 822, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 847, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__inner {
   filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.08));
   background-color: #e7e5e0;
@@ -874,7 +898,7 @@ a {
   position: relative;
 }
 
-/* line 829, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 854, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__inner::before {
   left: 0;
   border-width: 0 0 6px 6px;
@@ -886,7 +910,7 @@ a {
   top: -10px;
 }
 
-/* line 841, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 866, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__inner::after {
   border-width: 0 6px 6px 0;
   content: "";
@@ -898,7 +922,7 @@ a {
   top: -10px;
 }
 
-/* line 859, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 884, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__lists {
   display: flex;
   justify-content: space-between;
@@ -906,30 +930,30 @@ a {
   width: 525px;
 }
 
-/* line 866, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 891, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__list ul {
   padding: 0;
 }
 
-/* line 870, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 895, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__list ul li {
   list-style-type: none;
 }
 
-/* line 874, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 899, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__list ul li a {
   font-size: 13px;
   line-height: 20px;
   color: #4e4e4e;
 }
 
-/* line 881, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 906, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__rights {
   padding-top: 10px;
   padding-left: 42px;
 }
 
-/* line 885, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 910, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__rights-text {
   width: 156px;
   font-size: 11px;
@@ -937,17 +961,17 @@ a {
   padding-bottom: 15px;
 }
 
-/* line 892, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 917, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__rights-img img {
   padding-left: 6px;
 }
 
-/* line 897, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 922, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__social {
   padding-right: 25px;
 }
 
-/* line 901, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 926, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__social-icons {
   width: 118px;
   height: 103px;
@@ -957,7 +981,7 @@ a {
   padding-left: 9px;
 }
 
-/* line 913, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 938, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__social-btn a {
   cursor: pointer;
   height: 30px;
@@ -973,7 +997,14 @@ a {
   position: relative;
 }
 
-/* line 928, D:/impulsis_test_frontend/app/scss/style.scss */
+/* line 952, D:/impulsis_test_frontend/app/scss/style.scss */
+.footer__social-btn a:hover {
+  background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
+  border: 1px solid #ffb05c;
+  color: #fff;
+}
+
+/* line 959, D:/impulsis_test_frontend/app/scss/style.scss */
 .footer__social-btn a::before {
   position: absolute;
   content: "";
@@ -984,6 +1015,12 @@ a {
   background-position: center;
   left: 27px;
   top: 8px;
+}
+
+/* line 971, D:/impulsis_test_frontend/app/scss/style.scss */
+.button__hover:hover {
+  background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
+  border: 1px solid #9fd9f2;
 }
 
 /*# sourceMappingURL=style.css.map */

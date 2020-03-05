@@ -1,0 +1,63 @@
+@media (max-width: 1000px) {
+    .header__items {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        margin: 0 auto;
+        width: 780px;
+    }
+}
+
+@media (max-width: 780px) {
+    .container {
+     margin: 0 auto;
+     width: 500px;
+ }
+
+    .header__info {
+        width: auto;
+    }
+
+    .header__top-numbers a {
+        font-size: 13px;
+    }
+
+    .header__bottom-search input {
+        width: 178px;
+        height: 30px;
+    }
+
+    .header__bottom-languages button {
+        width: 31px;
+        height: 31px;
+    }
+
+    .header__bottom-signup a {
+        font-size: 12px;
+    }
+
+   
+
+    .header__bottom {
+        background-color: none;
+       
+    }
+
+
+
+    .header__top {
+        display: inline-block;
+        text-align: center;
+    }
+}
