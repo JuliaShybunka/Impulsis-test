@@ -5,9 +5,11 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Liberation Sans', arial;
   font-weight: 400;
   color: #4e4e4e;
+  overflow-x: hidden;
+
 }
 
 a {
@@ -19,6 +21,8 @@ a {
   width: 980px;
   margin: 0 auto;
 }
+
+
 
 .header {
   max-height: 130px;
@@ -173,7 +177,7 @@ a {
   display: flex;
   justify-content: space-between;
 
-  font-family: 'Opium', arial;
+  font-family: "Dejavu Sans";
   filter: drop-shadow(0px 1px 0px rgba(28, 160, 220, 0.75));
   list-style-type: none;
   margin: 0;
@@ -211,6 +215,56 @@ a {
   background-position: center;
   padding: 0 17px 0 18px;
   border-right: 1px dashed #ffb13e;
+}
+
+.header__ribbon {
+  position: relative;
+
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border: 23px solid #5ab3e0;
+    z-index: -1;
+    top: 0;
+    overflow: hidden;
+  }
+
+  &:before {
+    left: -329px;
+    border-right-width: 311px;
+    border-left-color: transparent;
+  }
+
+  &:after {
+    right: -339px;
+    border-left-width: 311px;
+    border-right-color: transparent;
+    z-index: -20;
+
+  }
+}
+
+.header__ribbon .header__nav:before,
+.header__ribbon .header__nav:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #004261 transparent transparent transparent;
+  bottom: -6px;
+}
+
+.header__ribbon .header__nav:before {
+  left: 0;
+  border-width: 5px 0 0 5px;
+}
+
+.header__ribbon .header__nav:after {
+  right: 0;
+  border-width: 5px 5px 0 0;
 }
 
 .main__inner {
@@ -350,9 +404,10 @@ a {
     background-size: cover;
     position: absolute;
     bottom: 0;
-    left: -4px;
+    left: -6px;
     display: flex;
     justify-content: space-between;
+
 
     &-text {
       max-width: 235px;
@@ -369,16 +424,32 @@ a {
       height: 38px;
       background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
       border: 1px solid #ffb15c;
+      clip-path: polygon(0 0, 89% 0%, 100% 100%, 0% 100%);
       font-size: 12px;
       color: #fff;
-      font-weight: bold;
       filter: drop-shadow(0px 1px 0px rgba(224, 126, 22, 0.75));
-      padding: 16px 13px 15px 62px;
+      padding: 13px 10px 15px 62px;
       margin-top: 35px;
+      margin: 35px 5px 0 0;
       display: inline-block;
       text-transform: uppercase;
       position: relative;
     }
+
+    &-link {
+      &::after {
+        position: absolute;
+        content: "";
+        border-width: 5px 5.5px 0 4.5px;
+        display: block;
+        border-style: solid;
+        border-color: #004261 transparent transparent transparent;
+        bottom: 14.5px;
+        right: 5px;
+      }
+    }
+
+
 
     &-link a::before {
       position: absolute;
@@ -392,11 +463,51 @@ a {
       left: 0;
       border-right: 1px dashed #ffc556;
     }
+
+
   }
 
 }
 
+.slick-slide img {
+  margin: 0 auto;
+  padding-top: 14px;
+}
+
 .shop {
+  .slick-dotted.slick-slider {
+    margin-bottom: 85px;
+    position: relative;
+  }
+
+  .slick-dots {
+    margin-top: 15px;
+    bottom: -45px;
+  }
+
+  .slick-dots li {
+    width: 38px;
+    height: 30px;
+    background-image: linear-gradient(0deg, #d9d9d7 0%, #fbfbfb 100%);
+    border: 1px solid #c4c4c4;
+    margin: 0;
+    cursor: pointer;
+    padding-top: 5px;
+
+
+    a {
+      text-align: center;
+      font-size: 12px;
+
+    }
+  }
+
+  .slick-dots li.slick-active {
+    background-image: linear-gradient(180deg, #006a9b 0%, #9bd7f1 100%);
+    border: 1px solid #9fd9f2;
+    color: #fff;
+  }
+
   &__title {
     font-size: 24px;
     color: #4e4e4e;
@@ -405,6 +516,7 @@ a {
 
   .slick-slider {
     width: 722px;
+    position: relative;
   }
 
   .slick__slide {
@@ -422,6 +534,45 @@ a {
     position: relative;
 
 
+    &-btn {
+      position: absolute;
+      bottom: 7px;
+      right: -5px;
+
+
+      &-inner {
+        padding: 0 25px 0 80px;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        filter: drop-shadow(0px 1px 0px rgba(224, 126, 22, 0.75));
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer;
+        width: 163px;
+        height: 32px;
+        background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
+        border: 1px solid #ffb15c;
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 41px;
+          height: 34px;
+          background-image: url(../images/plus-btn.png);
+          border-right: 1px dashed #ffc33b;
+          left: 10px;
+          top: 0;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+      }
+    }
+
+
     &-text a {
       font-size: 12px;
       color: #006a9b;
@@ -434,6 +585,7 @@ a {
       position: absolute;
       bottom: 0;
       padding-top: 12px;
+      width: 100%;
 
       &-sale {
         font-size: 12px;
@@ -554,12 +706,66 @@ a {
 }
 
 .footer {
+  background-color: #e7e5e0;
+  border-top: 5px solid #57afdb;
+
+  &__container {
+    width: 990px;
+    margin: 0 auto;
+    border-top: 5px solid #0095d9;
+
+  }
+
+  &__ribbon {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      width: 980px;
+      margin: 0 5px;
+      content: '';
+      height: 6px;
+      top: -11px;
+      background-color: #fff;
+    }
+  }
+
+
+
   &__inner {
     filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.08));
     background-color: #e7e5e0;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    &::before {
+      left: 0;
+      border-width: 0 0 6px 6px;
+      content: "";
+      position: absolute;
+      display: block;
+      border-style: solid;
+      border-color: transparent transparent #004261 transparent;
+      top: -10px;
+
+    }
+
+    &::after {
+      border-width: 0 6px 6px 0;
+      content: "";
+      position: absolute;
+      display: block;
+      border-style: solid;
+      border-color: transparent transparent #004261 transparent;
+      right: 0;
+      top: -10px;
+    }
+
+
+
   }
+
 
 }
 
