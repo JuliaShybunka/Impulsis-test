@@ -4,6 +4,27 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Opium Bold';
+  src: url('../fonts/opium_bold.eot');
+  /* IE 9 Compatibility Mode */
+  src: url('../fonts/opium_bold.eot?#iefix') format('embedded-opentype');
+  /* IE < 9 */
+  src: url('../fonts/opium_bold.woff2') format('woff2');
+  /* Super Modern Browsers */
+  src: url('../fonts/opium_bold.woff') format('woff');
+  /* Firefox >= 3.6, any other modern browser */
+  src: url('../fonts/opium_bold.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  src: url('../fonts/opium_bold.svg#opium_bold') format('svg');
+  /* Chrome < 4, Legacy iOS */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: 'Liberation Sans', arial;
   font-weight: 400;
@@ -41,7 +62,7 @@ a {
   }
 
   &__logo {
-    margin-left: 23px;
+    margin-left: 11px;
   }
 
   &__logo-mobile {
@@ -93,7 +114,7 @@ a {
     background-color: #dedddb;
     border: 1px solid #eeece8;
     margin-top: 2px;
-    padding-top: 5px;
+    padding-top: 7px;
 
     &-signup {
       margin-right: 12px;
@@ -179,12 +200,12 @@ a {
   height: 40px;
   filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.45));
   background-color: #0095da;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: -3px;
   position: relative;
-  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -195,17 +216,22 @@ a {
   font-size: 19px;
   display: flex;
   justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
+
+
   filter: drop-shadow(0px 1px 0px rgba(28, 160, 220, 0.75));
   list-style-type: none;
-  padding-top: 3px;
+  padding: 3px 0 0 31px;
   margin: 0;
-  padding-left: 38px;
+
+
 }
 
 .nav__menu-item a {
   color: #ffffff;
   padding: 5px;
+
 
   &:hover {
     background-image: linear-gradient(0deg, #ff7a0a 0%, #ffc600 99%);
@@ -425,8 +451,7 @@ a {
     right: 0;
     background-image: url(../images/slide-pagination.png);
     background-repeat: no-repeat;
-
-    padding: 12px 53px 16px 157px;
+    padding: 13px 28px 16px 170px;
 
 
     li {
@@ -458,7 +483,7 @@ a {
       line-height: 24px;
       color: #fff;
       font-family: 'Roboto', sans-serif;
-      font-weight: 300px;
+      font-weight: 300;
       filter: drop-shadow(0px 1px 0px rgba(0, 153, 223, 0.37));
       padding: 15px 0 0 18px;
     }
@@ -598,6 +623,7 @@ a {
     padding: 24px 0 15px 19px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+
   }
 
   .slick-slider {
@@ -670,6 +696,14 @@ a {
       }
     }
 
+    &-text {
+      padding: 0 18px;
+    }
+
+    &-img {
+      width: 169px;
+      height: 160px;
+    }
 
     &-text a {
       font-size: 12px;
@@ -718,14 +752,16 @@ a {
 
 .about {
   max-width: 460px;
-  padding: 20px 0 0 21px;
+  padding: 22px 0 0 19px;
 
   &__title {
     font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+
   }
 
   &__text {
-    padding-top: 20px;
+    padding-top: 15px;
     font-size: 13px;
     line-height: 20px;
 
@@ -735,7 +771,7 @@ a {
       font-size: 16px;
       font-weight: bold;
       font-style: italic;
-      padding: 26px 0 33px;
+      padding: 20px 0 24px;
     }
 
 
@@ -755,9 +791,11 @@ a {
   &__list {
     line-height: 20px;
     font-size: 13px;
+    font-family: 'Opium Bold';
 
     &-title {
-      padding-top: 15px;
+      padding-top: 10px;
+      font-family: 'Roboto', sans-serif;
     }
 
     ul {
@@ -770,6 +808,12 @@ a {
     ul li {
       font-style: italic;
       list-style: none;
+      line-height: 20px;
+
+    }
+
+    ul li+li {
+      height: 29px;
     }
 
     ul li:before {
@@ -793,12 +837,13 @@ a {
   &__title {
     font-size: 18px;
     line-height: 14px;
-    padding: 26px 0 15px 0;
+    padding: 28px 0 15px 3px;
+    font-family: 'Roboto', sans-serif;
   }
 
   &__box {
     width: 220px;
-    padding: 12px 17px 12px 0;
+    padding: 5px 3px 6px 2px;
     border-top: 1px solid #ece9e4;
     border-bottom: 1px solid #ece9e4;
     line-height: 20px;
@@ -884,8 +929,9 @@ a {
 .footer__lists {
   display: flex;
   justify-content: space-between;
-  padding-left: 25px;
-  width: 525px;
+  width: 529px;
+  padding-top: 2px;
+  padding: 2px 0 0 30px;
 }
 
 .footer__list ul {
@@ -908,19 +954,22 @@ a {
   padding-left: 42px;
 
   &-text {
-    width: 156px;
+    width: 165px;
     font-size: 11px;
     color: #8c8c8c;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
+    padding-left: 10px;
   }
 
+
+
   &-img img {
-    padding-left: 6px;
+    padding-left: 22px;
   }
 }
 
 .footer__social {
-  padding-right: 25px;
+  padding-right: 21px;
 }
 
 .footer__social-icons {
