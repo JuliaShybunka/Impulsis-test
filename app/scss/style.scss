@@ -99,6 +99,12 @@ a {
       font-size: 11px;
       line-height: 20px;
       width: 338px;
+
+      &:hover {
+        font-weight: 700;
+        color: #005c94;
+        filter: none;
+      }
     }
 
     span {
@@ -123,6 +129,12 @@ a {
         font-size: 14px;
         color: #484848;
         filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 0.75));
+
+        &:hover {
+          font-weight: 700;
+          color: #005c94;
+          filter: none;
+        }
       }
 
       span {
@@ -486,6 +498,18 @@ a {
       font-weight: 300;
       filter: drop-shadow(0px 1px 0px rgba(0, 153, 223, 0.37));
       padding: 15px 0 0 18px;
+      position: relative;
+
+      &::before {
+        border-width: 0 0 5px 5px;
+        content: "";
+        position: absolute;
+        display: block;
+        border-style: solid;
+        border-color: transparent transparent #004261 transparent;
+        top: -3px;
+        left: 2px;
+      }
     }
 
     &-link a {
@@ -566,17 +590,32 @@ a {
   .prev {
     bottom: -47px;
     left: 250px;
-    background: url('../images/shop-arrow-prev.png'), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%), ;
+    background: url('../images/shop-arrow-prev.png'), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%);
     background-repeat: no-repeat;
     background-position: center;
+
+    &:active {
+      background: url('../images/shop-arrow-prev-hover.png'), -webkit-linear-gradient(95deg, #9bd7f1 0%, #006a9b 100%);
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+
   }
 
   .next {
     bottom: -47px;
     right: 242px;
-    background: url('../images/shop-arrow-next.png'), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%), ;
+    background: url('../images/shop-arrow-next.png'), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%);
     background-repeat: no-repeat;
     background-position: center;
+
+    &:active {
+      background: url('../images/shop-arrow-next-hover.png'), -webkit-linear-gradient(95deg, #9bd7f1 0%, #006a9b 100%);
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
   }
 
   .slick-dotted.slick-slider {
@@ -1015,6 +1054,10 @@ a {
   background-position: center;
   left: 27px;
   top: 8px;
+}
+
+.footer__social-btn a:hover::before {
+  background-image: url(../images/footer-arrow-hover.png);
 }
 
 .button__hover:hover {
