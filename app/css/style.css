@@ -43,7 +43,7 @@ a {
 
 /* line 42, D:/impulsis_test_frontend/app/scss/style.scss */
 .container {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
