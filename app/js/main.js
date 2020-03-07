@@ -14,11 +14,40 @@ $(document).ready(function() {
     dots: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
+    responsive: [
+      {
+        breakpoint: 790,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+
+      {
+        breakpoint: 420,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false
+        }
+      }
+    ],
 
     customPaging: function(slick, index) {
       return "<a>" + (index + 1) + "</a>";
     }
   };
+
   // Init slick carousel
   $(".shop__items").slick(slickOpts);
   //$(".header__top-numbers").hide();

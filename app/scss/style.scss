@@ -402,7 +402,7 @@ a {
 }
 
 .slider {
-  width: 720px;
+  max-width: 720px;
   height: 403px;
   position: relative;
   margin-left: 4px;
@@ -741,7 +741,7 @@ a {
     }
 
     &-img {
-      width: 169px;
+      min-width: 169px;
       height: 160px;
     }
 
@@ -779,7 +779,7 @@ nav {
 }
 
 .main__section {
-  width: 720px;
+  max-width: 720px;
 }
 
 .about__box {
@@ -789,7 +789,7 @@ nav {
   border: 1px solid #eceae5;
   border-top: 3px solid #ff9a28;
   margin-left: 5px;
-  width: 718px;
+  max-width: 718px;
 }
 
 .about {

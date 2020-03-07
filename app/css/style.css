@@ -425,7 +425,7 @@ a {
 
 /* line 404, D:/impulsis_test_frontend/app/scss/style.scss */
 .slider {
-  width: 720px;
+  max-width: 720px;
   height: 403px;
   position: relative;
   margin-left: 4px;
@@ -775,7 +775,7 @@ a {
 
 /* line 743, D:/impulsis_test_frontend/app/scss/style.scss */
 .shop__item-img {
-  width: 169px;
+  min-width: 169px;
   height: 160px;
 }
 
@@ -815,7 +815,7 @@ nav {
 
 /* line 781, D:/impulsis_test_frontend/app/scss/style.scss */
 .main__section {
-  width: 720px;
+  max-width: 720px;
 }
 
 /* line 785, D:/impulsis_test_frontend/app/scss/style.scss */
@@ -826,7 +826,7 @@ nav {
   border: 1px solid #eceae5;
   border-top: 3px solid #ff9a28;
   margin-left: 5px;
-  width: 718px;
+  max-width: 718px;
 }
 
 /* line 795, D:/impulsis_test_frontend/app/scss/style.scss */
