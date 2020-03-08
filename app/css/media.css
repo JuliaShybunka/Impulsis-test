@@ -87,11 +87,6 @@
 
 
 @media (max-width: 790px) {
-    .shop .prev {
-        left: 149px;
-    }
-
-
     .shop__items {
         max-width: 600px;
     }
@@ -102,14 +97,55 @@
     }
 
     .shop .next {
-        right: 148px;
+        right: 208px;
     }
 
+    .shop .prev {
+        left: 209px;
+    }
+
+    .shop__title {
+        text-align: center;
+    }
 
 }
 
 
 @media (max-width: 750px) {
+
+    .about {
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .about__box {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .about__title {
+        text-align: center;
+    }
+
+    .news__title {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 22px;
+
+    }
+
+    .news {
+        margin: 0;
+        padding: 10px;
+        border-top: 3px solid #ff9a28;
+    }
+
+    .news__box-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
     .nav__menu-items {
         max-width: 413px;
@@ -170,9 +206,7 @@
         width: 140px;
         margin: 0;
     }
-}
 
-@media (max-width: 720px) {
     .slider .slider__info {
         min-width: 600px;
         height: 45px;
@@ -207,11 +241,14 @@
         bottom: 0;
     }
 
-
-
     .slider {
         max-width: 600px;
+        margin: 0 auto;
     }
+}
+
+@media (max-width: 720px) {
+
 
     .header__logo-img {
         display: none;
@@ -220,6 +257,15 @@
     .header__logo-mobile {
         display: inline-block;
     }
+
+    .shop .prev {
+        left: 149px;
+    }
+
+    .shop .next {
+        right: 148px;
+    }
+
 }
 
 @media (max-width: 670px) {
@@ -319,6 +365,52 @@
 
 }
 
+@media (max-width: 500px) {
+    .about {
+        padding: 5px;
+        margin: 0;
+        line-height: 11px;
+    }
+
+    .about__title,
+    .news__title {
+        font-size: 18px;
+    }
+
+
+    .about__box {
+        width: auto;
+    }
+
+    .about__text {
+        padding-top: 7px;
+        font-size: 12px;
+    }
+
+    .about__list-title {
+        padding-top: 3px;
+    }
+
+    .about__list {
+        font-size: 12px;
+    }
+
+    .about__text-bottom {
+        font-size: 11px;
+    }
+
+    .about__text-bold {
+        font-size: 15px;
+        padding: 11px 0 10px;
+        text-align: center;
+        line-height: 23px;
+    }
+
+    .about__list ul li+li {
+        height: auto;
+    }
+}
+
 @media (max-width: 420px) {
     .slider .slider__info-text {
         text-align: left;
@@ -327,6 +419,7 @@
 
     .shop__items {
         max-width: 200px;
+        margin: 0 auto;
     }
 
     .slider {
