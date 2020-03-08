@@ -6,12 +6,11 @@
 
 @font-face {
   font-family: 'Opium';
-  src: url('../fonts/.woff2') format('woff2'),
+  src: url('../fonts/Opium.woff2') format('woff2'),
     url('../fonts/Opium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 
 
 
@@ -21,7 +20,7 @@ html {
 
 
 body {
-  font-family: 'Liberation Sans', arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #4e4e4e;
   background-image: linear-gradient(90deg, #fefefe 37.50%, #fbfbfb 37.50%, #fbfbfb 50%, #fefefe 50%, #fefefe 87.50%, #fbfbfb 87.50%, #fbfbfb 100%);
@@ -484,6 +483,9 @@ a {
     display: flex;
     justify-content: space-between;
 
+    &__inner {
+      position: relative;
+    }
 
     &-text {
       max-width: 240px;
@@ -495,19 +497,26 @@ a {
       font-style: normal;
       filter: drop-shadow(0px 1px 0px rgba(0, 153, 223, 0.37));
       padding: 15px 0 0 18px;
-      position: relative;
 
-      &::before {
-        border-width: 0 0 5px 5px;
-        content: "";
-        position: absolute;
-        display: block;
-        border-style: solid;
-        border-color: transparent transparent #004261 transparent;
-        top: -3px;
-        left: 2px;
-      }
+      // &::before {
+      //   border-width: 0 0 5px 5px;
+      //   content: "";
+      //   position: absolute;
+      //   display: block;
+      //   border-style: solid;
+      //   border-color: transparent transparent #004261 transparent;
+      //   top: -3px;
+      //   left: 2px;
+      // }
     }
+
+    &-link {
+      position: absolute;
+      right: 246px;
+      bottom: 23px;
+    }
+
+
 
     &-link a {
       width: 179px;
@@ -519,8 +528,6 @@ a {
       color: #fff;
       filter: drop-shadow(0px 1px 0px rgba(224, 126, 22, 0.75));
       padding: 13px 10px 15px 62px;
-      margin-top: 35px;
-      margin: 35px 5px 0 0;
       display: inline-block;
       text-transform: uppercase;
       position: relative;
@@ -532,18 +539,7 @@ a {
       }
     }
 
-    &-link {
-      &::after {
-        position: absolute;
-        content: "";
-        border-width: 5px 5.5px 0 4.5px;
-        display: block;
-        border-style: solid;
-        border-color: #004261 transparent transparent transparent;
-        bottom: 19.5px;
-        right: 5px;
-      }
-    }
+
 
 
 
@@ -702,7 +698,6 @@ a {
         padding: 0 25px 0 80px;
         font-size: 12px;
         color: #fff;
-        font-weight: bold;
         filter: drop-shadow(0px 1px 0px rgba(224, 126, 22, 0.75));
         text-transform: uppercase;
         outline: none;
@@ -795,6 +790,7 @@ nav {
     font-family: 'Opium';
     font-weight: normal;
     font-style: normal;
+    letter-spacing: 1.5px;
 
   }
 
@@ -837,7 +833,7 @@ nav {
 
     ul {
       padding-left: 29px;
-      max-width: 400px;
+      max-width: 402px;
       margin-top: 0;
 
     }
@@ -847,10 +843,6 @@ nav {
       list-style: none;
       line-height: 20px;
 
-    }
-
-    ul li+li {
-      height: 29px;
     }
 
     ul li:before {
