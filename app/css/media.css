@@ -28,7 +28,48 @@
 
 }
 
+@media (max-width: 1030px) {
+
+    .footer__ribbon::before,
+    .footer__inner::after,
+    .footer__inner::before {
+        display: none;
+    }
+
+    .footer {
+        background-image: none;
+        border: none;
+        width: 100%;
+        filter: drop-shadow(0 0 2px rgba(0, 1, 1, 0.08));
+        background-image: -webkit-linear-gradient(0deg, #eceae5 37.5%, #f3f2f0 37.5%, #f3f2f0 50%, #eceae5 50%, #eceae5 87.5%, #f3f2f0 87.5%, #f3f2f0 100%);
+        background-size: 8.00px 8.00px;
+        border-top: 5px solid #0095d9;
+    }
+
+    .footer__container {
+        border: none;
+        width: auto;
+    }
+
+
+}
+
 @media (max-width: 1000px) {
+
+    .footer__social {
+        padding-right: 0;
+    }
+
+    .footer__lists {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2px 0 0 8px;
+        min-width: 437px;
+    }
+
+    .footer__rights {
+        padding-left: 0;
+    }
 
     .catalogue {
         display: none;
@@ -112,6 +153,47 @@
 
 
 @media (max-width: 750px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__lists {
+        padding: 5px;
+
+    }
+
+    .footer__rights {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer__rights-text,
+    .footer__rights-img img {
+        padding: 0 5px;
+    }
+
+    .footer__social-icons {
+        width: 100%;
+    }
+
+    .footer__social {
+        display: flex;
+    }
+
+    .footer__social-icons {
+        height: 46px;
+    }
+
+    .footer__social-btn a {
+        min-width: 100px;
+    }
+
+    .footer__social-btn {
+        background-color: #0095d9;
+        padding-right: 9px;
+    }
 
     .about {
         padding: 10px;
@@ -276,6 +358,12 @@
 }
 
 @media (max-width: 650px) {
+    .footer__rights-text {
+        max-width: 101px;
+        font-size: 9px;
+    }
+
+
     .header__nav {
         flex-direction: column;
         align-items: center;
@@ -366,6 +454,23 @@
 }
 
 @media (max-width: 500px) {
+    .footer__list ul li a {
+        font-size: 11px;
+    }
+
+    .footer__list ul {
+        margin: 0;
+    }
+
+    .footer__lists {
+        min-width: 380px;
+        padding: 0;
+    }
+
+    .footer__lists {
+        padding: 2px;
+    }
+
     .about {
         padding: 5px;
         margin: 0;
@@ -430,6 +535,14 @@
 
 
 @media (max-width: 400px) {
+    .footer__lists {
+        min-width: 308px;
+    }
+
+    .footer__list ul li a {
+        font-size: 10px;
+    }
+
     .header__nav {
         display: inline-block;
     }
