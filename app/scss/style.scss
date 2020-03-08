@@ -5,20 +5,15 @@
 }
 
 @font-face {
-  font-family: 'Opium Bold';
-  src: url('../fonts/opium_bold.eot');
-  /* IE 9 Compatibility Mode */
-  src: url('../fonts/opium_bold.eot?#iefix') format('embedded-opentype');
-  /* IE < 9 */
-  src: url('../fonts/opium_bold.woff2') format('woff2');
-  /* Super Modern Browsers */
-  src: url('../fonts/opium_bold.woff') format('woff');
-  /* Firefox >= 3.6, any other modern browser */
-  src: url('../fonts/opium_bold.ttf') format('truetype');
-  /* Safari, Android, iOS */
-  src: url('../fonts/opium_bold.svg#opium_bold') format('svg');
-  /* Chrome < 4, Legacy iOS */
+  font-family: 'Opium';
+  src: url('../fonts/.woff2') format('woff2'),
+    url('../fonts/Opium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
+
 
 html {
   scroll-behavior: smooth;
@@ -228,9 +223,9 @@ a {
   font-size: 19px;
   display: flex;
   justify-content: space-between;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-
+  font-family: 'Opium';
+  font-weight: normal;
+  font-style: normal;
 
   filter: drop-shadow(0px 1px 0px rgba(28, 160, 220, 0.75));
   list-style-type: none;
@@ -268,7 +263,6 @@ a {
   outline: none;
   cursor: pointer;
   position: relative;
-  font-family: 'Roboto', sans-serif;
   font-weight: 300px;
 
 
@@ -496,8 +490,9 @@ a {
       font-size: 24px;
       line-height: 24px;
       color: #fff;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
+      font-family: 'Opium';
+      font-weight: normal;
+      font-style: normal;
       filter: drop-shadow(0px 1px 0px rgba(0, 153, 223, 0.37));
       padding: 15px 0 0 18px;
       position: relative;
@@ -661,8 +656,7 @@ a {
     font-size: 24px;
     color: #4e4e4e;
     padding: 24px 0 15px 19px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'Opium';
 
   }
 
@@ -798,7 +792,9 @@ nav {
 
   &__title {
     font-size: 22px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Opium';
+    font-weight: normal;
+    font-style: normal;
 
   }
 
@@ -833,11 +829,10 @@ nav {
   &__list {
     line-height: 20px;
     font-size: 13px;
-    font-family: 'Opium Bold';
 
     &-title {
       padding-top: 10px;
-      font-family: 'Roboto', sans-serif;
+
     }
 
     ul {
@@ -880,7 +875,9 @@ nav {
     font-size: 18px;
     line-height: 14px;
     padding: 28px 0 15px 3px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Opium';
+    font-weight: normal;
+    font-style: normal;
   }
 
   &__box {
