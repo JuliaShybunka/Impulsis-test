@@ -173,6 +173,46 @@
 }
 
 @media (max-width: 720px) {
+    .slider .slider__info {
+        min-width: 600px;
+        height: 45px;
+        clip-path: none;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .slider .slider__info-text::before,
+    .slider .slider__info-link::after {
+        display: none;
+    }
+
+    .slider .slider__info-link a {
+        clip-path: none;
+        margin: 0;
+    }
+
+    .slider .slider__info-text {
+        max-width: 366px;
+        padding: 0;
+    }
+
+    .slider .slick-dots {
+        width: 100%;
+        display: block;
+        padding: 0;
+        padding-top: 12px;
+        bottom: 0;
+    }
+
+
+
+    .slider {
+        max-width: 600px;
+    }
+
     .header__logo-img {
         display: none;
     }
@@ -232,13 +272,67 @@
     .shop__items {
         max-width: 400px;
     }
+
+    .slider {
+        max-width: 400px;
+    }
+
+    .slider .slider__info {
+        display: inline-block;
+        min-width: 0;
+        width: 100%;
+        height: 33px;
+
+    }
+
+    .slider .slider__info-text {
+        text-align: center;
+        font-size: 19px;
+        margin: 0;
+    }
+
+    .slider .slider__info-link a {
+        padding: 0;
+        width: 40px;
+        height: 33px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .slider .slider__info-link a::before {
+        width: 40px;
+        height: 33px;
+        border: none;
+        left: -1px;
+    }
+
+
+    .slider .slider__info-link a span {
+        display: none;
+    }
+
+    .slider .slick-dots {
+        padding-top: 7px;
+        height: 39px;
+    }
+
 }
 
 @media (max-width: 420px) {
+    .slider .slider__info-text {
+        text-align: left;
+        font-size: 15px;
+    }
 
     .shop__items {
         max-width: 200px;
     }
+
+    .slider {
+        max-width: 300px;
+    }
+
 }
 
 
@@ -366,4 +460,8 @@
     }
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .slider {
+        max-width: 290px;
+    }
+}
