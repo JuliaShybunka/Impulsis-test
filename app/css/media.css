@@ -153,6 +153,12 @@
 
 
 @media (max-width: 750px) {
+
+    .slider .slider__info-link {
+        top: 4px;
+        right: 4px;
+    }
+
     .footer__inner {
         flex-direction: column;
         align-items: center;
@@ -202,7 +208,7 @@
 
     .about__box {
         display: inline-block;
-        width: 100%;
+        width: auto;
     }
 
     .about__title {
@@ -327,6 +333,19 @@
         max-width: 600px;
         margin: 0 auto;
     }
+
+    .slider::before,
+    .slider::after {
+        display: none;
+    }
+
+    .shop .next {
+        right: 192px;
+    }
+
+    .shop .prev {
+        left: 192px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -395,6 +414,11 @@
 }
 
 @media (max-width: 620px) {
+    .slider .slider__info-link {
+        top: 0px;
+        right: 0px;
+    }
+
     .shop .prev {
         left: 10px;
     }
@@ -450,6 +474,32 @@
         padding-top: 7px;
         height: 39px;
     }
+
+    .nav__btn button {
+        max-width: 180px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .header__bottom-languages {
+        max-width: 52px;
+        margin-right: 5px;
+    }
+
+    .header__bottom-signup {
+        margin-right: 5px;
+    }
+
+    .header__bottom-signup a:hover {
+        font-weight: normal;
+    }
+
+    .header__bottom-search input {
+        margin-left: 5px;
+    }
+
+
 
 }
 
@@ -514,6 +564,17 @@
     .about__list ul li+li {
         height: auto;
     }
+
+}
+
+@media (max-width: 440px) {
+    .header__bottom-languages {
+        max-width: 77px;
+        margin: 0;
+    }
+
+
+
 }
 
 @media (max-width: 420px) {
@@ -529,6 +590,10 @@
 
     .slider {
         max-width: 300px;
+    }
+
+    .shop {
+        margin-bottom: 50px;
     }
 
 }
@@ -566,9 +631,7 @@
         max-width: 200px;
     }
 
-    .shop {
-        margin-bottom: 50px;
-    }
+
 
     .shop .next,
     .shop .prev {
@@ -586,11 +649,19 @@
         outline: none;
         cursor: pointer;
         position: relative;
+        margin: 5px;
     }
 
     .header__top-numbers {
         position: absolute;
-        top: 0;
+        top: 35px;
+        left: 22px;
+        display: none;
+        min-width: 90px;
+    }
+
+    .header__top-numbers a {
+        font-size: 12px;
     }
 
     .header__top-number__inner {
@@ -614,6 +685,7 @@
         text-align: center;
         padding: 5px;
         margin: 0 auto;
+        min-width: 254px;
     }
 
     .header__bottom-signup-mobile {
@@ -638,18 +710,13 @@
         left: 3px;
     }
 
-    .header__bottom-languages {
-        margin-right: 10px;
-        max-width: 52px;
-    }
+
 
     .header {
         padding-bottom: 60px;
     }
 
-    .header__bottom-search input {
-        margin-left: 5px;
-    }
+
 
     .header__top-links {
         margin: 0 5px;

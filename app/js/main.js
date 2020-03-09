@@ -50,7 +50,8 @@ $(document).ready(function() {
 
   // Init slick carousel
   $(".shop__items").slick(slickOpts);
-  //$(".header__top-numbers").hide();
+
+  // $(".header__top-numbers").hide();
 
   $(".header__top-number").click(function() {
     $(".header__top-numbers").toggle();
