@@ -483,7 +483,7 @@
 
 @media (max-width: 550px) {
     .header__bottom-languages {
-        max-width: 52px;
+        max-width: 60px;
         margin-right: 5px;
     }
 
@@ -613,8 +613,8 @@
     }
 
     .nav__btn button {
-        width: 100%;
         display: block;
+        margin: 0 auto;
     }
 
     .nav__menu-items {
