@@ -50,7 +50,11 @@ $(document).ready(function() {
 
   $(".shop__items").slick(slickOpts);
 
-  $(".header__top-number").click(function() {
-    $(".header__top-numbers").toggle();
-  });
+  $( ".open-close-btn" ).on('click touchstart', function(e) {
+    // prevent default anchor click 
+    e.preventDefault();
+    $(".header__nav-wrapper").toggleClass("header__nav-wrapper-open");
+    $("#burger-menu").toggleClass("burger-open");
+});
+
 });
