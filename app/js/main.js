@@ -16,7 +16,7 @@ $(document).ready(function() {
     nextArrow: $(".next"),
     responsive: [
       {
-        breakpoint: 791,
+        breakpoint: 768,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -26,7 +26,7 @@ $(document).ready(function() {
       },
 
       {
-        breakpoint: 621,
+        breakpoint: 690,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
@@ -34,7 +34,7 @@ $(document).ready(function() {
       },
 
       {
-        breakpoint: 421,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

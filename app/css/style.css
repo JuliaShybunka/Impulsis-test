@@ -422,14 +422,6 @@ body {
           transform: translateY(-50%);
 }
 
-.slick-slide {
-  outline: none;
-}
-.slick-slide img {
-  width: 100%;
-  height: 100%;
-}
-
 .slider {
   max-width: 720px;
   height: 396px;
@@ -584,9 +576,17 @@ body {
   left: 0;
   border-right: 1px dashed #ffc556;
 }
+.slider .slick-slide {
+  outline: none;
+}
+.slider .slick-slide img {
+  width: 100%;
+  height: 100%;
+}
 
 .shop {
   position: relative;
+  margin-top: 12px;
 }
 .shop .prev,
 .shop .next {
@@ -602,26 +602,18 @@ body {
 .shop .prev {
   bottom: -47px;
   left: 250px;
-  background: url("../images/shop-arrow-prev.png"), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: no-repeat center url("../images/shop-arrow-prev.png"), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%);
 }
 .shop .prev:active {
-  background: url("../images/shop-arrow-prev-hover.png"), -webkit-linear-gradient(95deg, #9bd7f1 0%, #006a9b 100%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: no-repeat center url("../images/shop-arrow-prev-hover.png"), -webkit-linear-gradient(95deg, #9bd7f1 0%, #006a9b 100%);
 }
 .shop .next {
   bottom: -47px;
-  right: 242px;
-  background: url("../images/shop-arrow-next.png"), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%);
-  background-repeat: no-repeat;
-  background-position: center;
+  right: 246px;
+  background: no-repeat center url("../images/shop-arrow-next.png"), -webkit-linear-gradient(95deg, #d9d9d7 0%, #fbfbfb 100%);
 }
 .shop .next:active {
-  background: url("../images/shop-arrow-next-hover.png"), -webkit-linear-gradient(95deg, #9bd7f1 0%, #006a9b 100%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: no-repeat center url("../images/shop-arrow-next-hover.png"), -webkit-linear-gradient(95deg, #9bd7f1 0%, #006a9b 100%);
 }
 .shop .slick-dotted.slick-slider {
   position: relative;
@@ -660,22 +652,19 @@ body {
 .shop__title {
   font-size: 24px;
   color: #4e4e4e;
-  padding: 26px 0 15px 22px;
+  padding: 22px 15px 11px;
   font-family: "Opium";
 }
 .shop .slick-slider {
-  width: 722px;
+  max-width: 720px;
   position: relative;
-}
-.shop .slick__slide {
-  max-width: 163px;
 }
 .shop__item {
   width: 160px;
   height: 290px;
   -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 1, 1, 0.37));
           filter: drop-shadow(0px 1px 1px rgba(0, 1, 1, 0.37));
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: center;
   border: 1px solid #dcd9d0;
   border-top: 3px solid #dcd9d0;
