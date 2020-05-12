@@ -625,8 +625,8 @@ body {
 //===================================================================
 .shop {
   position: relative;
-  margin-top: 12px;
-
+  margin: 12px 0 92px;
+  
 
   .prev,
   .next {
@@ -830,8 +830,6 @@ nav {
   &__title {
     font-size: 22px;
     font-family: "Opium";
-    font-weight: normal;
-    font-style: normal;
     letter-spacing: 1.5px;
   }
 
@@ -924,6 +922,8 @@ nav {
     }
   }
 }
+
+//===================================================================
 
 .footer {
   background-image: linear-gradient(
