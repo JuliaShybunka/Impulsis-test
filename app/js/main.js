@@ -51,7 +51,6 @@ $(document).ready(function() {
   $(".shop__items").slick(slickOpts);
 
   $( ".open-close-btn" ).on('click touchstart', function(e) {
-    // prevent default anchor click 
     e.preventDefault();
     $(".header__nav-wrapper").toggleClass("header__nav-wrapper-open");
     $("#burger-menu").toggleClass("burger-open");
